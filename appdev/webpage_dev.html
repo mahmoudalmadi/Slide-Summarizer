@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+    <style>
+        p{
+            color:aquamarine;
+            font-size: 16px;
+            font-style: times-new-roman;
+        }
+
+        .list_color {
+            color:antiquewhite;
+        }
+
+        .larger-image{
+            width : 500px;
+            height: 200px;
+        }
+        .black-border{
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            border-radius:5px;
+        }
+
+        <!-- radius could also be a percentage making it look more
+        of a circle while a px value allows for rounded edges instead-->
+
+        .blueviolet-background{
+            background-color: blueviolet;
+        }
+        #study-tool-description{
+            background-color: blueviolet;
+            padding : 20px;
+            margin: 20px;
+        }
+        <!-- margin could also be negative to close the gap around it-->
+        #tool{
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        <!-- or could be represented as a single line in the following
+            order top, right, bottom, left
+            padding: 10px 20px 20px 10px
+            same can be done for margine
+            margin: 10px 20px 20px 10px-->
+        
+        [type='checkbox']{
+            margin-top : 15px;
+            margin-bottom : 15px;
+        }
+
+        body{
+            font-style: times-new-roman;
+        }
+        <!-- instead of px other units such as in and mm. Additionally
+            theres measurements like em and rem where em is relative to 
+            font size-->
+
+        <!-- id declarations override class declarations. inline
+            declaration takes precedence over both 
+            however, adding !important after declaring a color
+            can override everything-->
+
+    </style>
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+
+    <style>
+        head{
+            font-family: 'Tangerine', serif;
+        }
+    </style>
+
+    <head class="blueviolet-background">
+        <h1>This is a Slide Study Tool</h1>
+        <h2 style="color:blueviolet;">All About Making Slide Decks Made More Usefel</h2>
+
+        <a href="#Study Tool Description"> Study Tool Description</a>
+        <a href="#Sample Output Slidedeck Summary"> Sample Output Slidedeck Summary</a>
+        <a href="#tool"> Study Tool</a>
+        <a href="#Source Code"> Source Code</a>
+    </head>
+
+    <body>    
+        <main id="Study Tool Description">
+            <p id = "Study Tool Description">
+                When given a slide deck, this skde study tool will first choose the most important slides
+                in the slide deck and compile them into a short slidedeck that will serve as 
+                a useful summary for the slidedeck. I hope you like it. Just do this:
+            </p>
+
+            <ol class="list_color">
+                <li>Upload Slidedeck</li>
+                <li>Download Summary</li>
+                <li>Et viola! You're done.</li>
+            </ol>
+
+            <div id="Sample Output Slidedeck Summary">
+                <p id = "Sample Output Slidedeck Summary">
+                    I would like to show you a demonstration of the selection of the summarizer for a given slidedeck.
+                </p>
+
+                <img src = "C:\Users\Mahmo\Desktop\Slide-Summarizer\appdev\slide_deck_summary for slidedeck 441-1.png" alt="Sample Summary" class ="larger-image black-border">
+
+                <p>
+                    Slidedeck credit goes to the LILY group at Yale that publicly shared that slidedeck as well as manny others
+                    on <a href="https://github.com/Yale-LILY" target="_blank"> its open-source "lecture bank" on Github.</a>
+                </p>
+            </div>
+        </main>
+
+        <div id ="tool">
+            <form action="slidestudytool.com/submitfeedback">
+                <input type="Text" required placeholder="Feedback">
+                <button type = "submit">Submit</button>
+
+                <p>
+                    Indicate what you would like to use this Slide Study Tool for.
+                </p>
+
+                <label for = "summary">
+                    <input type="checkbox" value = "summary" name="services" checked>Summary
+                </label>>
+                <label for = "quiz">
+                    <input type="checkbox"  value = "quiz" name="services" checked>Quiz
+                </label>>
+
+                <p>
+                    Select whether you would like the length of your summary to be a percentage of the slidedeck or a specific number of slides.
+                </p>
+
+                <label for = "specific">
+                    <input type="radio" value= "specific" name="specific-percentage" checked>Specific Number of Slides
+                </label>>
+                <label for = "percentage">
+                    <input type="radio"  value= "percentage" name="specific-percentage">Percentage of Slide Decks
+                </label>>
+            </form>
+        </div>
+
+        <a href = "https://github.com/mahmoudalmadi/Slide-Summarizer" id = "Source Code"> Source code for this tool can be found in the following Github reposity </a>
+
+    </body>
+
+</html>
