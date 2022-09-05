@@ -15,7 +15,7 @@ The following is a description of files and folders in the repository.
 * *slide_summarizer.py*
     - Combines all of the code to implement the summarizer. Designed to be run from terminal with the options of inputting parameters. (under development)
 * **appdev** folder: includes the following file
-    - *webpage_dev.html*: an html script for a webpage for the slide summerizer (under development)
+    - *webpage_dev.html*: an html script for a webpage for the slide summarizer (under development)
 * **slidecks** folder: this folder contains the slidedecks to be summarized
 * **summarizer_infrastructure** folder: includes folders with code used to develop the slide summarizer
     - **feature_extraction** folder: includes all the code used to extract and evaluate features from the slidedeck
