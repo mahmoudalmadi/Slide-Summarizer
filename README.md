@@ -17,7 +17,7 @@ The following is a description of files and folders in the repository.
 * **appdev** folder: includes the following file
     - *webpage_dev.html*: an html script for a webpage for the slide summerizer (under development)
 * **slidecks** folder: this folder contains the slidedecks to be summarized
-* **summari*zer_infrastructure** folder: includes folders with code used to develop the slide summarizer
+* **summarizer_infrastructure** folder: includes folders with code used to develop the slide summarizer
     - **feature_extraction** folder: includes all the code used to extract and evaluate features from the slidedeck
         * *CLIP_features.py*: code for extracting specific slide deck features using the CLIP model
         * *extracting_text.py*: code for exctracting text from the slide deck
