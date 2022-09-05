@@ -6,14 +6,14 @@ Slide Summarizer is a project that started as a class project for COMP 646: Deep
 
 This project is currently under development; however more information on the preliminary work and underlying research behind the current status of the project [is laid out in the following report.](https://drive.google.com/file/d/1yL5ck-3nixf83PcYcgOqw9fm7EegxfBw/view?usp=sharing)
 
-Since this project uses a range of dependecies for incorporating machine learning models, it requires a set of libraries that are yet to be packaged into an environment and uploaded to this repository in a yml file that can be activated using Anaconda. That can then be used to run the slide summarizer.
+To use the summarizer, one must upload their slidedecks to the **slidedecks** folder and then run the *slide_summarizer.py* file. Since this project uses a range of dependecies for incorporating machine learning models, it requires a set of libraries that are yet to be packaged into an environment and uploaded to this repository in a yml file that can be activated using Anaconda. That can then be used to run the slide summarizer.
 
 ## Repository Details
 
 The following is a description of files and folders in the repository.
 
 * *slide_summarizer.py*
-    - Combines all of the code to implement the summarizer. Designed to be run from terminal with the options of inputting parameters. (underd development)
+    - Combines all of the code to implement the summarizer. Designed to be run from terminal with the options of inputting parameters. (under development)
 * **appdev** folder: includes the following file
     - *webpage_dev.html*: an html script for a webpage for the slide summerizer (under development)
 * **slidecks** folder: this folder contains the slidedecks to be summarized
